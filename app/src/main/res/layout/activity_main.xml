@@ -6,13 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+
+    <EditText
+        android:id="@+id/edIndex"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Index "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="File Name "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/edIndex"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFetch"
+        android:layout_width="117dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="72dp"
+        android:text="Fetch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edIndex" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="117dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="72dp"
+        android:text="Insert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toEndOf="@+id/btnFetch"
+        app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+    <ImageView
+        android:id="@+id/id_img"
+        android:layout_width="240dp"
+        android:layout_height="229dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/id_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsert"
+        app:layout_constraintVertical_bias="0.625" />
 </androidx.constraintlayout.widget.ConstraintLayout>
