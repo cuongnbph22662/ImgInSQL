@@ -3,11 +3,8 @@ package cuongnbph22662.poly.imginsql.model;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
 public class ImageInSQL {
-    @PrimaryKey
     private String tenImg;
-
     private String linkImg;
 
     public ImageInSQL(String tenImg, String linkImg) {
